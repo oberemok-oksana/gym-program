@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";
+import Card from "@/components/Card";
+import Exercise from "@/components/Exercise";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +21,32 @@ export default function Home() {
       <Layout>
         <Header />
         <main className={styles.main}>
-          <div className="container">hello</div>
+          <div className="container">
+            <section className="introduction">
+              <h1 className="main-title">Welcome to your GYM</h1>
+              <h2 className="main-subtitle">Find the healthy way</h2>
+            </section>
+            <section className="programs">
+              <span className="line"></span>
+              <h2 className="title">Popular Workouts</h2>
+              <div className="cards">
+                <Card />
+                <Card />
+                <Card />
+              </div>
+            </section>
+            <section className="exercises">
+              <span className="line"></span>
+              <h2 className="title">Popular Exercises</h2>
+              <div className="exercises-cards">
+                <Exercise />
+                <Exercise />
+                <Exercise />
+              </div>
+            </section>
+          </div>
         </main>
+        <Footer />
       </Layout>
     </>
   );

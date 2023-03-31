@@ -1,0 +1,55 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 50px;
+}
+
+.about {
+  flex-basis: 25%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+.title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.list li,
+.socials li {
+  color: rgba(255, 255, 255, 0.3);
+  list-style-type: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button {
+  padding: 8px 13px;
+  cursor: pointer;
+  background-color: #1b998b;
+  width: 60%;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+}

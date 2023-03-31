@@ -3,10 +3,14 @@ import styles from "../styles/Header.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div>Logo</div>
+      <div>
+        <a className={styles.logo} href="#">
+          GYM
+        </a>
+      </div>
       <nav>
         <ul className={styles.nav}>
-          <li className={styles.li}>Program</li>
+          <li>Program</li>
           <li>About</li>
           <li>Contacts</li>
         </ul>

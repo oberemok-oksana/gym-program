@@ -1,0 +1,60 @@
+.bg {
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 800px;
+  margin: 0 auto;
+  /* position: relative; */
+  background-color: rgb(230, 230, 231);
+}
+
+.wrapper {
+  background-image: url(/images/dumbell.jpg);
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+.wrapper::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: black;
+  bottom: 25%;
+  left: calc(50% - 100px);
+  position: absolute;
+}
+
+.content {
+  margin-top: 60px;
+  /* text-align: center; */
+  padding: 0 50px;
+}
+
+.video {
+  display: block;
+  margin: 0 auto;
+  padding: 45px;
+}

@@ -5,8 +5,20 @@ import Layout from "@/components/Layout";
 import Card from "@/components/Card";
 import Exercise from "@/components/Exercise";
 import Footer from "@/components/Footer";
+import { getSortedWorkoutsData } from "@/lib/workouts";
+import Link from "next/link";
 
-export default function Home() {
+export const getStaticProps = () => {
+  const allWorkoutsData = getSortedWorkoutsData();
+
+  return {
+    props: {
+      allWorkoutsData,
+    },
+  };
+};
+
+export default function Home({ allWorkoutsData }) {
   return (
     <>
       <Head>
@@ -39,6 +51,17 @@ export default function Home() {
                 <Exercise />
                 <Exercise />
                 <Exercise />
+                <ul>
+                  {allWorkoutsData.map((workoutData) => {
+                    return (
+                      <li key={workoutData.id}>
+                        <Link href={`/workouts/${workoutData.id}`}>
+                          {workoutData.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
             </section>
           </div>

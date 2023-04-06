@@ -1,7 +1,7 @@
 ---
 title: "rdl"
 subtitle: "Romanian Dead Lift"
-video: https://www.youtube.com/watch?v=LmaaLFNT1vs
+video: https://www.youtube.com/embed/LmaaLFNT1vs
 date: "03.04.2023"
 image: "/images/dumbbell-romanian-deadlift-steps.png"
 ---

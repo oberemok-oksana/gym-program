@@ -1,38 +1,42 @@
 import { getAllWorkoutIds, getWorkoutData } from "@/lib/workouts";
 import Image from "next/image";
 import styles from "../../styles/Workout.module.css";
+import Header from "@/components/Header";
 
 const Workout = ({ workoutData }) => {
   return (
-    <div className={styles.bg}>
-      <div className={styles.card}>
-        <div className={styles.wrapper}>
-          <h2 className={styles.title}>{workoutData.subtitle}</h2>
-        </div>
-        <Image
-          className={styles.image}
-          width="300"
-          height="200"
-          alt="text"
-          src={workoutData.image}
-        />
-        <div
-          className={styles.content}
-          dangerouslySetInnerHTML={{ __html: workoutData.contentHtml }}
-        ></div>
+    <>
+      <div className={styles.bg}>
+        <Header />
+        <div className={styles.card}>
+          <div className={styles.wrapper}>
+            <h2 className={styles.title}>{workoutData.subtitle}</h2>
+          </div>
+          <Image
+            className={styles.image}
+            width="300"
+            height="200"
+            alt="text"
+            src={workoutData.image}
+          />
+          <div
+            className={styles.content}
+            dangerouslySetInnerHTML={{ __html: workoutData.contentHtml }}
+          ></div>
 
-        <iframe
-          className={styles.video}
-          width="700"
-          height="415"
-          src={workoutData.video}
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+          <iframe
+            className={styles.video}
+            width="700"
+            height="415"
+            src={workoutData.video}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

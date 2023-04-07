@@ -1,16 +1,19 @@
 import styles from "../styles/Header.module.css";
+import Link from "next/link";
 
-const Header = () => {
+const Header = ({}) => {
   return (
     <header className={styles.header}>
       <div>
-        <a className={styles.logo} href="#">
+        <Link className={styles.logo} href="/">
           GYM
-        </a>
+        </Link>
       </div>
       <nav>
         <ul className={styles.nav}>
-          <li>Program</li>
+          <li>
+            <Link href="/workouts">Workouts</Link>
+          </li>
           <li>About</li>
           <li>Contacts</li>
         </ul>

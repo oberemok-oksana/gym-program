@@ -6,6 +6,9 @@
   align-items: center;
   gap: 15px;
   letter-spacing: 0.2em;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  height: 480px;
 }
 
 .title {
@@ -23,4 +26,10 @@
   letter-spacing: 0.2em;
   color: #fff;
   cursor: pointer;
+}
+
+.image {
+  display: block;
+  width: 220px;
+  height: 230px;
 }

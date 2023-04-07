@@ -1,0 +1,49 @@
+.bg {
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgb(230, 230, 231);
+}
+
+.wrapper {
+  background-image: url(/images/dumbell.jpg);
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+.input {
+  width: 35px;
+  padding: 5px 7px;
+  border-radius: 4px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

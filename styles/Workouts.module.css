@@ -1,0 +1,21 @@
+.workouts {
+  background-color: #fff;
+}
+
+.wrapper {
+  background-image: url(/images/dumbell.jpg);
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+}

@@ -2,7 +2,6 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";
-import Card from "@/components/Card";
 import Exercise from "@/components/Exercise";
 import Footer from "@/components/Footer";
 import { getSortedWorkoutsData } from "@/lib/workouts";

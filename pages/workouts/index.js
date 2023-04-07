@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "../../styles/Workouts.module.css";
 import Card from "@/components/Card";
 import Footer from "@/components/Footer";
+import Cards from "@/components/Cards";
 
 export const getStaticProps = () => {
   const allWorkoutsData = getSortedWorkoutsData();
@@ -27,7 +28,8 @@ const Workouts = ({ allWorkoutsData }) => {
             <div className={styles.wrapper}>
               <h1 className={styles.title}>All Workouts</h1>
             </div>
-            <ul className="cards">
+            <Cards workouts={allWorkoutsData} />
+            {/* <ul className="cards">
               {allWorkoutsData.map((workoutData) => {
                 return (
                   <li key={workoutData.id}>
@@ -40,7 +42,7 @@ const Workouts = ({ allWorkoutsData }) => {
                   </li>
                 );
               })}
-            </ul>
+            </ul> */}
           </div>
         </div>
         <Footer />

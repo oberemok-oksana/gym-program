@@ -7,6 +7,7 @@ import Exercise from "@/components/Exercise";
 import Footer from "@/components/Footer";
 import { getSortedWorkoutsData } from "@/lib/workouts";
 import Link from "next/link";
+import Cards from "@/components/Cards";
 
 export const getStaticProps = () => {
   const allWorkoutsData = getSortedWorkoutsData();
@@ -38,11 +39,7 @@ export default function Home({ allWorkoutsData }) {
             <section className="programs">
               <span className="line"></span>
               <h2 className="title">Popular Workouts</h2>
-              <div className="cards">
-                <Card />
-                <Card />
-                <Card />
-              </div>
+              <Cards workouts={allWorkoutsData} />
             </section>
             <section className="exercises">
               <span className="line"></span>
@@ -51,6 +48,7 @@ export default function Home({ allWorkoutsData }) {
                 <Exercise />
                 <Exercise />
                 <Exercise />
+
                 <ul>
                   {allWorkoutsData.map((workoutData) => {
                     return (

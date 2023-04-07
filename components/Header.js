@@ -12,8 +12,15 @@ const Header = ({}) => {
       <nav>
         <ul className={styles.nav}>
           <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
             <Link href="/workouts">Workouts</Link>
           </li>
+          <li>
+            <Link href="/programs">Programs</Link>
+          </li>
+
           <li>About</li>
           <li>Contacts</li>
         </ul>

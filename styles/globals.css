@@ -178,6 +178,7 @@ a {
 .cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 20px 0;
   list-style: none;
   gap: 15px;
@@ -205,6 +206,8 @@ a {
   justify-content: center;
   margin: 25px;
   gap: 20px;
+  list-style: none;
+  /* flex-wrap: wrap; */
 }
 
 .table {

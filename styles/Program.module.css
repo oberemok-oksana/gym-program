@@ -1,3 +1,13 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  list-style: none;
+}
+
 .bg {
   background-image: url("/images/bg.jpg");
   background-size: cover;

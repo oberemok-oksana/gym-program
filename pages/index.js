@@ -7,18 +7,22 @@ import Footer from "@/components/Footer";
 import { getSortedWorkoutsData } from "@/lib/workouts";
 import Link from "next/link";
 import Cards from "@/components/Cards";
+import { getSortedProgramsData } from "@/lib/programs";
 
 export const getStaticProps = () => {
   const allWorkoutsData = getSortedWorkoutsData();
+  const allProgramsData = getSortedProgramsData();
 
   return {
     props: {
       allWorkoutsData,
+      allProgramsData,
     },
   };
 };
 
-export default function Home({ allWorkoutsData }) {
+export default function Home({ allWorkoutsData, allProgramsData }) {
+  const firstWorkouts = allWorkoutsData.filter((workout, i) => i <= 5);
   return (
     <>
       <Head>
@@ -37,18 +41,19 @@ export default function Home({ allWorkoutsData }) {
             </section>
             <section className="programs">
               <span className="line"></span>
-              <h2 className="title">Popular Workouts</h2>
-              <Cards workouts={allWorkoutsData} />
+              <h2 className="title">Popular Exercises</h2>
+              <Cards workouts={firstWorkouts} />
             </section>
             <section className="exercises">
               <span className="line"></span>
-              <h2 className="title">Popular Exercises</h2>
-              <div className="exercises-cards">
-                <Exercise />
-                <Exercise />
-                <Exercise />
-
-                <ul>
+              <h2 className="title">Popular Programs</h2>
+              <ul className="exercises-cards">
+                {allProgramsData.map((programData) => (
+                  <li key={programData.id}>
+                    <Exercise program={programData} />
+                  </li>
+                ))}
+                {/* <ul>
                   {allWorkoutsData.map((workoutData) => {
                     return (
                       <li key={workoutData.id}>
@@ -58,8 +63,8 @@ export default function Home({ allWorkoutsData }) {
                       </li>
                     );
                   })}
-                </ul>
-              </div>
+                </ul> */}
+              </ul>
             </section>
           </div>
         </main>

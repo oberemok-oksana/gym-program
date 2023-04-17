@@ -5,7 +5,7 @@ video: https://www.youtube.com/embed/LmaaLFNT1vs
 date: "03.04.2023"
 image: "/images/dumbbell-romanian-deadlift-steps.png"
 cover: "/images/b3.jpg"
-description: "Target Muscle Group - Hamstrings. Exercise Type - Strength. Equipment Required - Barbell"
+description: "Hinge movement where weight is lifted from floor to thigh level, targeting hamstrings and glutes, while maintaining a straight spine."
 ---
 
 ## EXERCISE PROFILE

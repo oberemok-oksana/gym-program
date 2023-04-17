@@ -5,7 +5,7 @@ video: https://www.youtube.com/embed/2YhcpVkhrH4
 date: "04.04.2023"
 image: "/images/split-squat.png"
 cover: "/images/b2.jpg"
-description: "Target Muscle Group - Quads/Glutes. Exercise Type - Strength. Equipment Required - Dumbbell"
+description: "Unilateral lower body exercise involving a split stance, with back foot elevated on a bench, for building strength and stability."
 ---
 
 ## EXERCISE PROFILE

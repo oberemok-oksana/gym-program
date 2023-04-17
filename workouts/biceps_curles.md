@@ -5,7 +5,7 @@ video: https://www.youtube.com/embed/P5sXHLmXmBM
 date: "04.04.2023"
 image: "/images/hammer-curl.png"
 cover: "/images/b1.jpg"
-description: "Target Muscle Group - Biceps. Exercise Type - Strength. Equipment Required - Dumbbell"
+description: "Arm exercise involving a neutral grip, where dumbbells are lifted towards shoulders, targeting biceps, forearms and grip strength."
 ---
 
 ## EXERCISE PROFILE

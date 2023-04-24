@@ -12,17 +12,23 @@ const Header = ({}) => {
       <nav>
         <ul className={styles.nav}>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" className="link">
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/workouts">Workouts</Link>
+            <Link href="/workouts" className="link">
+              Workouts
+            </Link>
           </li>
           <li>
-            <Link href="/programs">Programs</Link>
+            <Link href="/programs" className="link">
+              Programs
+            </Link>
           </li>
 
-          <li>About</li>
-          <li>Contacts</li>
+          <li className="link">About</li>
+          <li className="link">Contacts</li>
         </ul>
       </nav>
     </header>

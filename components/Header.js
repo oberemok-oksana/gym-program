@@ -28,7 +28,11 @@ const Header = ({}) => {
           </li>
 
           <li className="link">About</li>
-          <li className="link">Contacts</li>
+          <li>
+            <Link className="link" href="/contacts">
+              Contacts
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

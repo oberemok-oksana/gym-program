@@ -30,7 +30,7 @@ const Footer = () => {
             <Link href="/workouts">Workouts</Link>
           </li>
           <li>
-            <Link href="#">Contacts</Link>
+            <Link href="/contacts">Contacts</Link>
           </li>
         </ul>
       </div>
@@ -57,7 +57,6 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            {" "}
             <a href="https://www.instagram.com/">
               <img src="/images/instagram.svg" alt="instagram" />
             </a>

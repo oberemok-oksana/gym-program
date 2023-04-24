@@ -253,3 +253,31 @@ link {
 .reset:active {
   transform: scale(0.05);
 }
+
+.bg {
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  background-image: url(/images/dumbell.jpg);
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.padding {
+  padding: 50px;
+}

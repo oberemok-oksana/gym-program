@@ -1,18 +1,22 @@
-import Image from "next/image";
-import styles from "../../styles/Program.module.css";
 import Header from "@/components/Header";
+import styles from "../../styles/Program.module.css";
+
 import { getAllProgramsIds, getProgramData } from "@/lib/programs";
 import Footer from "@/components/Footer";
 
-const Program = ({ programData }) => {
+const Program = ({ program }) => {
+  console.log(program);
   return (
     <>
       <div className={styles.bg}>
         <Header />
-
         <div className={styles.card}>
           <div className={styles.wrapper}>
-            <h2 className={styles.title}>{programData.subtitle}</h2>
+            <h2 className={styles.title}>{program.subtitle}</h2>
+          </div>
+          <div>
+            <h3>Warm up:</h3>
+            <p>{program.warmUp}</p>
           </div>
           <div className="wrap">
             <table className="table">
@@ -24,7 +28,7 @@ const Program = ({ programData }) => {
                 </tr>
               </thead>
               <tbody>
-                {programData.exercises.map((exercise) => (
+                {program.exercises.map((exercise) => (
                   <tr key={exercise.exercise}>
                     <td className="table-cell">{exercise.exercise}</td>
                     <td className="table-cell">{exercise.sets}</td>
@@ -43,7 +47,7 @@ const Program = ({ programData }) => {
                 </tr>
               </thead>
               <tbody>
-                {programData.exercises.map((exercise) => (
+                {program.exercises.map((exercise) => (
                   <tr key={exercise.exercise}>
                     <td className="table-cell">{exercise.exercise}</td>
                     <td className="table-cell">
@@ -85,11 +89,11 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }) => {
-  const programData = await getProgramData(params.id);
-  console.log(programData);
+  const program = await getProgramData(params.id);
+
   return {
     props: {
-      programData,
+      program,
     },
   };
 };

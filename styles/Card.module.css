@@ -29,6 +29,16 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #958e8e;
+  transition: all 0.3s ease;
+}
+
+.button:active {
+  transform: scaleY(0.02);
+  transition: all 0.3s ease;
+}
+
 .image {
   display: block;
   width: 220px;

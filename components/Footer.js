@@ -10,7 +10,9 @@ const Footer = () => {
           Get fit and healthy with our comprehensive workout guide. Achieve your
           fitness goals today!
         </p>
-        <button className={styles.button}>Read More</button>
+        <Link href="/about" className={styles.button}>
+          Read More
+        </Link>
       </div>
       <div>
         <h4 className={styles.title}>Quick menu</h4>

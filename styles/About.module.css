@@ -1,0 +1,27 @@
+.title {
+  margin: 15px 0;
+  font-size: 23px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+}
+
+.image:hover {
+  width: 30px;
+  height: 22px;
+}
+
+.text {
+  font-size: 17px;
+}

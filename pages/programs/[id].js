@@ -14,9 +14,13 @@ const Program = ({ program }) => {
           <div className={styles.wrapper}>
             <h2 className={styles.title}>{program.subtitle}</h2>
           </div>
-          <div>
+          <div className={styles.warmup}>
             <h3>Warm up:</h3>
-            <p>{program.warmUp}</p>
+            <ul className={styles.list}>
+              {program.warmUp.map((item, i) => (
+                <li key={i + 1}>{item}</li>
+              ))}
+            </ul>
           </div>
           <div className="wrap">
             <table className="table">

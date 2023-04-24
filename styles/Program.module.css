@@ -57,3 +57,11 @@
   -webkit-appearance: none;
   margin: 0;
 }
+
+.warmup {
+  padding: 40px 40px 15px 40px;
+}
+
+.list {
+  margin-top: 15px;
+}

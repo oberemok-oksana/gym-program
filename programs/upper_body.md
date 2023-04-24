@@ -11,9 +11,12 @@ exercises:
   ]
 cover: "/images/legs.jpg"
 
-warmUp : "- 5-10 minutes of light cardio (jogging, jumping jacks, etc.);
-- Arm circles. Stand with your feet shoulder-width apart and extend your arms out to the sides. Make small circles with your arms, gradually increasing the size of the circles. Do 10 circles in each direction.
-- Wrist rotations. Hold your arms straight out in front of you with your palms facing down. Slowly rotate your wrists in a circular motion, making sure to move only your wrists and not your arms. Do 10 circles in each direction."
+warmUp:
+  [
+    "5-10 minutes of light cardio (jogging, jumping jacks, etc.);",
+    "Arm circles. Stand with your feet shoulder-width apart and extend your arms out to the sides. Make small circles with your arms, gradually increasing the size of the circles. Do 10 circles in each direction.",
+    "Wrist rotations. Hold your arms straight out in front of you with your palms facing down. Slowly rotate your wrists in a circular motion, making sure to move only your wrists and not your arms. Do 10 circles in each direction.",
+  ]
 
 description: "Upper body day is a strength training workout that focuses on the muscles in your chest, back, shoulders, and arms. This type of workout typically includes exercises like bench presses, rows, pull-ups, and shoulder presses to build strength, size, and definition in the upper body."
 ---

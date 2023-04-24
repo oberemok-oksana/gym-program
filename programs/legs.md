@@ -1,6 +1,6 @@
 ---
 title: "legs_day"
-subtitle: "Legs day"
+subtitle: "Lower Body Day"
 exercises:
   [
     { exercise: "Romanian Dead Lift", sets: 4, reps: "10" },

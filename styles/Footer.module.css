@@ -46,6 +46,15 @@
   background-color: #1b998b;
   width: 60%;
 }
+.button:hover {
+  background-color: #958e8e;
+  transition: all 0.3s ease;
+}
+
+.button:active {
+  transform: scaleY(0.02);
+  transition: all 0.3s ease;
+}
 
 .socials {
   display: flex;

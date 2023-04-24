@@ -18,21 +18,29 @@ const Footer = () => {
         <h4 className={styles.title}>Quick menu</h4>
         <ul className={styles.list}>
           <li>
-            <Link className={styles.link} href="/">
+            <Link href="/" className="link">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about" className="link">
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/programs">Programs</Link>
+            <Link href="/programs" className="link">
+              Programs
+            </Link>
           </li>
           <li>
-            <Link href="/workouts">Workouts</Link>
+            <Link href="/workouts" className="link">
+              Workouts
+            </Link>
           </li>
           <li>
-            <Link href="/contacts">Contacts</Link>
+            <Link href="/contacts" className="link">
+              Contacts
+            </Link>
           </li>
         </ul>
       </div>
@@ -40,13 +48,19 @@ const Footer = () => {
         <h4 className={styles.title}>Programs</h4>
         <ul className={styles.list}>
           <li>
-            <Link href="/programs/upper_body">Upper body workout</Link>
+            <Link href="/programs/upper_body" className="link">
+              Upper body workout
+            </Link>
           </li>
           <li>
-            <Link href="/programs/legs">Lower body workout</Link>
+            <Link href="/programs/legs" className="link">
+              Lower body workout
+            </Link>
           </li>
           <li>
-            <Link href="/programs/fullbody">Full body workout</Link>
+            <Link href="/programs/fullbody" className="link">
+              Full body workout
+            </Link>
           </li>
         </ul>
       </div>

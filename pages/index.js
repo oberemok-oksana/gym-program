@@ -5,7 +5,6 @@ import Layout from "@/components/Layout";
 import Exercise from "@/components/Exercise";
 import Footer from "@/components/Footer";
 import { getSortedWorkoutsData } from "@/lib/workouts";
-import Link from "next/link";
 import Cards from "@/components/Cards";
 import { getSortedProgramsData } from "@/lib/programs";
 
@@ -23,6 +22,7 @@ export const getStaticProps = () => {
 
 export default function Home({ allWorkoutsData, allProgramsData }) {
   const firstWorkouts = allWorkoutsData.filter((workout, i) => i <= 5);
+  const firstPrograms = allProgramsData.filter((program, i) => i < 4);
   return (
     <>
       <Head>
@@ -48,22 +48,11 @@ export default function Home({ allWorkoutsData, allProgramsData }) {
               <span className="line"></span>
               <h2 className="title">Popular Programs</h2>
               <ul className="exercises-cards">
-                {allProgramsData.map((programData) => (
+                {firstPrograms.map((programData) => (
                   <li key={programData.id}>
                     <Exercise program={programData} />
                   </li>
                 ))}
-                {/* <ul>
-                  {allWorkoutsData.map((workoutData) => {
-                    return (
-                      <li key={workoutData.id}>
-                        <Link href={`/workouts/${workoutData.id}`}>
-                          {workoutData.title}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul> */}
               </ul>
             </section>
           </div>

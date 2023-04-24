@@ -11,6 +11,10 @@
   font-size: 25px;
 }
 
+.logo:hover {
+  color: #958e8e;
+}
+
 .nav {
   display: flex;
   gap: 20px;

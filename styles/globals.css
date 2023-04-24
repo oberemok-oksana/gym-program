@@ -105,6 +105,11 @@ link {
   cursor: pointer;
 }
 
+.link:hover {
+  color: #989191;
+  transition: all 0.2s ease;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -145,18 +150,6 @@ link {
   text-transform: uppercase;
   color: #fff;
 }
-
-/* .line::before {
-  content: "";
-  display: block;
-  width: 150px;
-  height: 3px;
-  background-color: #363030;
-  position: absolute;
-  top: 10%;
-  left: 42%;
-  z-index: 5;
-} */
 
 .programs {
   padding-top: 80px;

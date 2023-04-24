@@ -12,14 +12,12 @@ const Contacts = () => {
         </div>
         <div className="padding">
           <p className={styles.text}>
-            Welcome to our workout website! We are dedicated to helping you
-            achieve your fitness goals through expert guidance, effective
-            training programs, and a supportive community. Our team of
-            experienced trainers and coaches is passionate about helping you
-            lead a healthier, happier life. Whether you're a beginner or a
-            seasoned athlete, we have everything you need to reach your full
-            potential. Join us today and start your journey to a stronger,
-            fitter you!
+            Welcome to our workout website! We value your feedback and
+            questions. If you have any inquiries, suggestions, or just want to
+            say hi, please don't hesitate to contact us. Our team is here to
+            assist you in any way possible. Simply choose any way of contact
+            below, and we'll get back to you as soon as possible. Thank you for
+            visiting our website, and we look forward to hearing from you!
           </p>
           <h4 className={styles.title}>
             We have different ways how you can contact us:

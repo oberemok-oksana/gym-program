@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
@@ -37,13 +38,13 @@ const Footer = () => {
         <h4 className={styles.title}>Programs</h4>
         <ul className={styles.list}>
           <li>
-            <a href="#">Upper body workout</a>
+            <Link href="/programs/upper_body">Upper body workout</Link>
           </li>
           <li>
-            <a href="#">Lower body workout</a>
+            <Link href="/programs/legs">Lower body workout</Link>
           </li>
           <li>
-            <a href="#">Full body workout</a>
+            <Link href="/programs/fullbody">Full body workout</Link>
           </li>
         </ul>
       </div>

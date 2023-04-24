@@ -14,10 +14,10 @@ const Contacts = () => {
           <p className={styles.text}>
             Welcome to our workout website! We value your feedback and
             questions. If you have any inquiries, suggestions, or just want to
-            say hi, please don't hesitate to contact us. Our team is here to
-            assist you in any way possible. Simply choose any way of contact
-            below, and we'll get back to you as soon as possible. Thank you for
-            visiting our website, and we look forward to hearing from you!
+            say hi, please don&apos;t hesitate to contact us. Our team is here
+            to assist you in any way possible. Simply choose any way of contact
+            below, and we&apos;ll get back to you as soon as possible. Thank you
+            for visiting our website, and we look forward to hearing from you!
           </p>
           <h4 className={styles.title}>
             We have different ways how you can contact us:

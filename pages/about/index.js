@@ -16,7 +16,7 @@ const About = () => {
             achieve your fitness goals through expert guidance, effective
             training programs, and a supportive community. Our team of
             experienced trainers and coaches is passionate about helping you
-            lead a healthier, happier life. Whether you're a beginner or a
+            lead a healthier, happier life. Whether you&apos;re a beginner or a
             seasoned athlete, we have everything you need to reach your full
             potential. Join us today and start your journey to a stronger,
             fitter you!

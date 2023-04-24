@@ -7,8 +7,8 @@ const Footer = () => {
       <div className={styles.about}>
         <h4 className={styles.title}>About</h4>
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-          quos rem ullam, placeat amet.
+          Get fit and healthy with our comprehensive workout guide. Achieve your
+          fitness goals today!
         </p>
         <button className={styles.button}>Read More</button>
       </div>
@@ -16,21 +16,21 @@ const Footer = () => {
         <h4 className={styles.title}>Quick menu</h4>
         <ul className={styles.list}>
           <li>
-            <a className={styles.link} href="#">
+            <Link className={styles.link} href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link href="#">About</Link>
           </li>
           <li>
-            <a href="#">Programs</a>
+            <Link href="/programs">Programs</Link>
           </li>
           <li>
-            <a href="#">Workouts</a>
+            <Link href="/workouts">Workouts</Link>
           </li>
           <li>
-            <a href="#">Contacts</a>
+            <Link href="#">Contacts</Link>
           </li>
         </ul>
       </div>

@@ -31,9 +31,9 @@ Abs, Hamstrings
 &nbsp;  
 &nbsp;
 
-- Arm circles: Stand with your feet shoulder-width apart and extend your arms out to the sides. Make small circles with your arms, gradually increasing the size of the circles. Do 10 circles in each direction.
-- Wrist rotations: Hold your arms straight out in front of you with your palms facing down. Slowly rotate your wrists in a circular motion, making sure to move only your wrists and not your arms. Do 10 circles in each direction.
-- Light weight curls: Grab a pair of light weights (or a weight bar) and do a few sets of 10-15 curls. This will help to warm up your biceps and forearms.
+- 5-10 minutes of light cardio (jogging, jumping jacks, etc.);
+- 10-15 reps of bodyweight squats;
+- 10-15 reps of glute bridges;
   &nbsp;  
   &nbsp;  
   &nbsp;  

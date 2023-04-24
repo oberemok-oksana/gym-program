@@ -236,3 +236,20 @@ link {
   display: flex;
   align-items: center;
 }
+
+.reset {
+  padding: 7px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+}
+
+.reset:hover {
+  border: 2px solid rgb(145, 145, 137);
+  transition: all 0.4s ease;
+}
+
+.reset:active {
+  transform: scale(0.05);
+}

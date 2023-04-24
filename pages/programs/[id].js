@@ -52,6 +52,10 @@ const Program = ({ program }) => {
     });
   };
 
+  const reset = () => {
+    setWorkout(initialWorkout);
+  };
+
   return (
     <>
       <div className={styles.bg}>
@@ -129,6 +133,13 @@ const Program = ({ program }) => {
                     </td>
                   </tr>
                 ))}
+                <tr>
+                  <td>
+                    <button className="reset" onClick={reset}>
+                      Reset
+                    </button>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
